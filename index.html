@@ -5,38 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cadastro de Alunos</title>
 <link href="style.css"></link>
-<script>
-
-function validar() {
-       let nome = document.getElementById("nome").value;
-       let sobrenome = document.getElementById("sobrenome").value;
-       let anoNascimento = document.getElementById("anonasc").value;
-       let graduacao = document.getElementById("graduacao").value;
-
-       if (nome == "") {
-        alert("Insira seu nome");
-        return false;
-    }
-
-    if (sobrenome == "") {
-        alert("Insira seu sobrenome");
-        return false;
-    }
-
-    if (anoNascimento == "") {
-        alert("Insira seu ano de nascimento");
-        return false;
-    }
-
-    if (graduacao == "") {
-        alert("Insira sua graduação pretendida");
-        return false;
-    }
-
-    return true;
-
-}
-</script>
 
 </head>
 <body>
@@ -75,6 +43,38 @@ function validar() {
     <button type="submit">Salvar</button>
 </form>
 
+<script>
 
+    function validar() {
+           let nome = document.getElementById("nome").value;
+           let sobrenome = document.getElementById("sobrenome").value;
+           let anoNascimento = document.getElementById("anonasc").value;
+           let graduacao = document.getElementById("graduacao").value;
+    
+           if (nome == "") {
+            alert("Insira seu nome");
+            return false;
+        }
+    
+        if (sobrenome == "") {
+            alert("Insira seu sobrenome");
+            return false;
+        }
+    
+        if (anoNascimento == "") {
+            alert("Insira seu ano de nascimento");
+            return false;
+        }
+    
+        if (graduacao == "") {
+            alert("Insira sua graduação pretendida");
+            return false;
+        }
+    
+        return true;
+    
+    }
+    </script>
+    
 </body>
 </html>
