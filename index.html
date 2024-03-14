@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cadastro de Alunos</title>
-<a href="style.css"></a>
+<link href="style.css"></link>
 <script>
 
 function validar() {
@@ -13,18 +13,27 @@ function validar() {
        let anoNascimento = document.getElementById("anonasc").value;
        let graduacao = document.getElementById("graduacao").value;
 
-        if (nome == "")
-        return("Insira seu nome")
+       if (nome == "") {
+        alert("Insira seu nome");
+        return false;
+    }
 
-        if (sobrenome == "")
-        return("Insira seu sobrenome")
+    if (sobrenome == "") {
+        alert("Insira seu sobrenome");
+        return false;
+    }
 
-        if (anonasc == "")
-        return("Insira seu ano de nascimento")
+    if (anoNascimento == "") {
+        alert("Insira seu ano de nascimento");
+        return false;
+    }
 
-        if (graduacao == "")
-        return("Insira sua graduacao pretendida")
+    if (graduacao == "") {
+        alert("Insira sua graduação pretendida");
+        return false;
+    }
 
+    return true;
 
 }
 </script>
