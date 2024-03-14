@@ -7,7 +7,26 @@
 <a href="style.css"></a>
 <script>
 
-    
+function validar() {
+       let nome = document.getElementById("nome").value;
+       let sobrenome = document.getElementById("sobrenome").value;
+       let anoNascimento = document.getElementById("anonasc").value;
+       let graduacao = document.getElementById("graduacao").value;
+
+        if (nome == "")
+        return("Insira seu nome")
+
+        if (sobrenome == "")
+        return("Insira seu sobrenome")
+
+        if (anonasc == "")
+        return("Insira sua data de nascimento")
+
+        if (graduacao == "")
+        return("Insira sua graduacao pretendida")
+
+
+}
 </script>
 
 </head>
@@ -21,11 +40,12 @@
     <label for="sobrenome">Sobrenome:</label>
     <input type="text" id="sobrenome" required><br>
     
-    <label for="anoNascimento">Ano de Nascimento:</label>
-    <input type="date" id="anoNascimento" required><br>
+    <label for="anoNascimento">Data de Nascimento:</label>
+    <input type="date" id="anonasc" required><br>
     
     
     <label for="graduacao">Graduação Pretendida:</label>
+
     <select id="graduacao" required>
         <option value="sistemas">Sistemas</option>
         <option value="filosofia">Filosofia</option>
@@ -49,3 +69,4 @@
 
 </body>
 </html>
+z
